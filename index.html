@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><!-- <header> - Defines a header for a document or a section -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Jayla's Dance Studio</title>
+
+<!--     the link of the bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- the link of the css i used -->
+    <link href="css/business-casual.css" rel="stylesheet">
+
+   <!-- the links of the fonts I used  -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+   
+</head>
+
+<body>
+<!-- the div divides the html in sections -->
+    <div class="brand">Jayla's Dance Studio</div>
+    <div class="address-bar">1831 Brandywine Street | Philadelphia, PA 19130 | 267.407.4355</div>
+
+   <!-- the navigation bar at the top of the web --> 
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Business Casual</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                        <!-- the names of the pages on the nav bar -->
+                    </li>
+                </ul>
+            </div>
+          
+        </div>
+      
+    </nav>
+<!-- the start of the container -->
+<!-- the container is the area enclosed by the beginning and ending tags -->
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12 text-center">
+                    <div id="carousel-example-generic" class="carousel slide">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators hidden-xs">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for the slides slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img class="img-responsive img-full" src="http://www.etcfblog.com/wp-content/uploads/2012/07/4-Types-of-Dances-a-Powerful-Slimming.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="http://bloximages.newyork1.vip.townnews.com/dallasweekly.com/content/tncms/assets/v3/editorial/0/cb/0cbd2356-c9c0-11e5-b4a3-5fd59a341513/56b0c8c57ec9d.image.jpg?resize=620%2C729" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="http://www.nathardance.org/assets/b2ef0948f446c3f75ffe2a8ec379b5a7.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="icon-next"></span>
+                        </a>
+                    </div>
+                    <h2 class="brand-before">
+                        <small>Welcome to</small>
+                    </h2>
+                    <h1 class="brand-name">Jayla's Dance Studio</h1>
+                    <hr class="tagline-divider">
+                
+                </div>
+            </div>
+        </div>
+<!-- divides the column in rows and boxes -->
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Welcome!
+                        
+                    </h2>
+                    <hr>
+                    <img class="img-responsive img-border img-left" src="data:image/png;base64,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" alt="">
+                    <hr class="visible-xs">
+                    <h3>People</h3>
+                    <p> Our club's members range from those with two left feet (and sometimes more) to veteran dancers with years of experience.  We welcome anyone interested in learning and having fun, including Philadelphia area undergraduate students, graduate students, and professionals.  .</p>
+                    <h4>Dance</h4>
+                    <p>We offer many different times of dance. At Jayla's Dance Studio we offer jazz, tap, ballet, African, Pointe, hip-hop, contemporary, majorette, step, and salsa </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    
+                    
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9P2kIuGdlc8" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- adds another div container -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright &copy Jayla's Dance Studio 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- the soirce for the j query -->
+    <script src="js/jquery.js"></script>
+
+   <!-- the source for the bootstrap javascript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed of the slids of the pictures
+    })
+    </script>
+
+</body>
+
+</html>
